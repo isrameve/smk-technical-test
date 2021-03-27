@@ -1,0 +1,50 @@
+@font-face{
+    font-family: PressStart2P;
+    src: url(fonts/PressStart2P-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;  
+    font-family: PressStart2P; 
+}
+/* Header */
+.nav-prueba-t {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    height: 40px;
+    z-index: 1;
+}
+
+.nav-prueba-t p{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.cont-video-overlay {
+    padding: 0!important;
+    position: relative;
+}
+
+.video-background {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    bottom: 0;
+}
+.mute {
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+    z-index: 3;
+    background-color: #2d1f56;
+    border-color: #2d1f56;
+}
+/* End Header */
