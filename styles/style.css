@@ -2,39 +2,54 @@
     font-family: PressStart2P;
     src: url(fonts/PressStart2P-Regular.ttf);
 }
+
 * {
     margin: 0;
     padding: 0;  
     font-family: PressStart2P; 
 }
+
+/* utilities */
+.margin-botton {
+    margin-bottom: 30px;
+}
+.simple-text {
+    font-size: 0.7rem;
+}
+
 /* Header */
 .nav-prueba-t {
     text-align: center;
-    color: white;
     background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 0;
-    height: 40px;
-    z-index: 1;
+    height: 60px;
+    z-index: 4;
 }
-
 .nav-prueba-t p{
-    margin-top: 5px;
+    margin-top: 12px;
     margin-bottom: 0;
+    font-size: 1.3rem;
+    color: white;
 }
-
 .cont-video-overlay {
-    padding: 0!important;
+    padding: 0 !important;
     position: relative;
 }
-
 .video-background {
     width: 100%;
 }
-
+.weather {
+    position: absolute;
+    font-size: 1rem;
+    color: white;
+    bottom: 50%;
+    left: 41%;
+    z-index: 3;
+}
 .overlay {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.6);
     top: 0;
     bottom: 0;
@@ -43,8 +58,39 @@
     position: absolute;
     right: 3%;
     bottom: 5%;
-    z-index: 3;
-    background-color: #2d1f56;
-    border-color: #2d1f56;
+    z-index: 2;
+    background-color: #353051;
+    border-color: #353051;
+    transition: background-color 1s;
+    transition: color 1s;
 }
-/* End Header */
+.mute:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Contain */
+.main-content {
+    margin-top: 50px;
+}
+.left-content {
+    background-color: #353051;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+.left-content p {
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
+}
+.right-content {
+    padding: 10px;
+}
+.right-content h1 {
+    font-size: 2rem;
+}
+
+/* Footer */
+
+/* End Footer */
+
