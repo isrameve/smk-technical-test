@@ -16,6 +16,12 @@
 .simple-text {
     font-size: 0.7rem;
 }
+.d-flex {
+    display: flex;
+}
+.text-align-c {
+    text-align: center;
+}
 
 /* Header */
 .nav-prueba-t {
@@ -44,8 +50,18 @@
     font-size: 1rem;
     color: white;
     bottom: 50%;
-    left: 41%;
     z-index: 3;
+}
+.cont-temp-desc {
+    justify-content: space-evenly;
+}
+.temp {
+    text-align: right;
+    padding-right: 5%;
+}
+.description {
+    text-align: left;
+    padding-left: 5%;
 }
 .overlay {
     position: absolute;
@@ -79,15 +95,29 @@
     padding: 15px;
     border-radius: 10px;
 }
-.left-content p {
-    border-bottom: 1px solid white;
-    padding-bottom: 8px;
-}
 .right-content {
     padding: 10px;
 }
 .right-content h1 {
     font-size: 2rem;
+}
+.left-content p {
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
+}
+.slider {
+    justify-content: center;
+}
+.slick-next:before, 
+.slick-prev:before {
+    color: #353051;
+}
+.slider img {
+    border: 1px solid #353051;
+    width: 100%;
+}
+.map {
+    justify-content: center;
 }
 
 /* Footer */
