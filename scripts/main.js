@@ -1,3 +1,8 @@
+//Mute - Unmute
+function mute() {
+     const video = document.querySelector('#video');
+     video.muted = !video.muted;     
+}
 $(document).ready(function () {
      //Slider
      $(".slider").slick({
@@ -7,17 +12,20 @@ $(document).ready(function () {
           fade: true,
           cssEase: "linear",
      });
-
+     
      //Getting the API
-     const getApi ="https://api.openweathermap.org/data/2.5/weather?id=3674962&appid=62120a81c75c69d7134fb99e04276204&lang=es&units=metric";
-     const toPrint = document.querySelector('#weather');
+     const getApiWeater ="https://api.openweathermap.org/data/2.5/weather?id=3674962&appid=62120a81c75c69d7134fb99e04276204&lang=es&units=metric";
+     const getApiNews ='https://api.currentsapi.services/v1/latest-news?language=es&apiKey=pxRI0wVSqn4GpPn7Z5k4k9rh7qpnRcB-7a8Ga9lzYHQYHMBP';
+
+     const toPrintWeater = document.querySelector('#weather');
+     const toPrintNews = document.querySelector('#news');
 
      function weather() {
-          fetch(getApi)
+          fetch(getApiWeater)
                .then((response) => response.json())
                .then((data) => {
-                    console.log("Perfect", data);
-                    toPrint.innerHTML = `
+                    console.log("Perfect openweathermap", data);
+                    toPrintWeater.innerHTML = `
                                         <div class="row container-weather">
                                              <div class="col-12 city text-align-c margin-botton">
                                                   <p>Clima en: Medellín</p>
@@ -34,12 +42,20 @@ $(document).ready(function () {
                                         </div>
                                         `; 
                })
-               .catch("Algo aslió mal");
+               .catch("Algo aslió mal con la API openweathermap");
      }
 
      function news() {
-
+          fetch(getApiNews)
+               .then((response) => response.json())
+               .then((data) => {
+                    console.log("Perfect newsapi", data.news);
+                    for (let i = 0; i < 10; i++) {                         
+                         toPrintNews.innerHTML +=`<p class="simple-text">${data.news[i].title}</p>`;                         
+                    }
+               })
+               .catch("Algo aslió mal con la API newsapi");
      }
-     news();
      weather();
+     news();
 });

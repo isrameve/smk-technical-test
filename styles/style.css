@@ -101,15 +101,19 @@
     padding: 15px;
     border-radius: 10px;
 }
+.left-content p {
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
+}
 .right-content {
     padding: 10px;
 }
 .right-content h1 {
     font-size: 2rem;
+    color: #353051;
 }
-.left-content p {
-    border-bottom: 1px solid white;
-    padding-bottom: 8px;
+.right-content p {
+    color: #353051;
 }
 .slider {
     justify-content: center;
