@@ -45,29 +45,24 @@
 .video-background {
     width: 100%;
 }
+.container-weather {
+    justify-content: center;
+}
 .weather {
     position: absolute;
     font-size: 1rem;
     color: white;
-    bottom: 50%;
+    bottom: 30%;
     z-index: 3;
 }
 .cont-temp-desc {
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .temp {
-    text-align: right;
-    padding-right: 5%;
-}
-.temp p:nth-child(2) {
-    padding-right: 8%;
+    max-width: 300px;
 }
 .description {
-    text-align: left;
-    padding-left: 5%;
-}
-.description p:nth-child(2) {
-    margin-left: -5%;
+    max-width: 300px;
 }
 .overlay {
     position: absolute;

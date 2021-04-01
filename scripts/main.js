@@ -1,7 +1,7 @@
 //Mute - Unmute
 function mute() {
      const video = document.querySelector('#video');
-     video.muted = !video.muted;     
+     video.muted = !video.muted;
 }
 $(document).ready(function () {
      //Slider
@@ -27,17 +27,17 @@ $(document).ready(function () {
                     console.log("Perfect openweathermap", data);
                     toPrintWeater.innerHTML = `
                                         <div class="row container-weather">
-                                             <div class="col-12 city text-align-c margin-botton">
+                                             <div class="col-12 city margin-botton">
                                                   <p>Clima en: Medellín</p>
                                              </div>
                                              <div class="row cont-temp-desc">
                                                   <div class="col-6 temp">
-                                                       <p>Temperatura:</p>
-                                                       <p>${data.main.temp}ºC</p>
+                                                       <div><p>Temperatura:</p></div>
+                                                       <div><p>${data.main.temp}ºC</p></div>
                                                   </div>
-                                             <div class="col-6 description">
-                                                       <p>description:</p>
-                                                       <p>${data.weather[0].description}</p>
+                                                  <div class="col-6 description">
+                                                       <div><p>description:</p></div>
+                                                       <div><p>${data.weather[0].description}</p></div>
                                              </div>
                                         </div>
                                         `; 
