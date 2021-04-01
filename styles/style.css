@@ -86,7 +86,7 @@
     color: black;
 }
 
-/* Contain */
+/* Content */
 .main-content {
     margin-top: 50px;
 }
@@ -124,25 +124,42 @@
 .map {
     justify-content: center;
 }
+.map iframe {
+    width: 100%;
+}
 
 /* Footer */
-
-/* End Footer */
+footer p {
+    margin-top: 50px;
+    color: #4582fe;
+}
+.right-foot {
+    text-align: right;
+}
+.left-foot p span {
+    color: #353051;
+}
 
 /* Media Query*/
-
-/* Extra Small devices */
-/* @media (max-width: 575px) {} */
-
 /* Small devices (landscape phones, 576px and up) */
-/* @media (max-width: 576px) {} */
-
+@media (max-width: 576px) {
+    .nav-prueba-t {
+        height: 40px;
+        line-height: 50%;
+    }
+    .nav-prueba-t p{
+        font-size: 1rem;
+    }
+    .weather {
+        font-size: 0.7rem;
+        bottom: 10%;
+    }
+}
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 767px) {
     .content {
         flex-direction: column-reverse;
     }
 }
-
 /* Large devices (desktops, 992px and up) */
 /* @media (max-width: 992px) { ... } */
