@@ -11,7 +11,7 @@
 
 /* utilities */
 .margin-botton {
-    margin-bottom: 30px;
+    margin-bottom: 1rem;
 }
 .simple-text {
     font-size: 0.7rem;
@@ -21,6 +21,9 @@
 }
 .text-align-c {
     text-align: center;
+}
+.col-xs-6 {
+    width: 50%;
 }
 
 /* Header */
@@ -52,7 +55,7 @@
     position: absolute;
     font-size: 1rem;
     color: white;
-    bottom: 30%;
+    top: 45%;
     z-index: 3;
 }
 .cont-temp-desc {
@@ -141,7 +144,22 @@ footer p {
 }
 
 /* Media Query*/
-/* Small devices (landscape phones, 576px and up) */
+/* Large devices (desktops, max 992px) */
+/* @media (max-width: 992px) { ... } */
+
+/* Medium devices (tablets, max 768px) */
+@media (max-width: 767px) {
+    .content {
+        flex-direction: column-reverse;
+    }
+    footer {
+        text-align: center;
+    }
+    .right-foot {
+        text-align: center;
+    }
+}
+/* Small devices (landscape phones, max 576px) */
 @media (max-width: 576px) {
     .nav-prueba-t {
         height: 40px;
@@ -150,16 +168,34 @@ footer p {
     .nav-prueba-t p{
         font-size: 1rem;
     }
+    .city {
+        margin-bottom: 0.2rem;
+    }
     .weather {
         font-size: 0.7rem;
-        bottom: 10%;
+        top: 45%;
+    }
+    .weather p {
+        margin-bottom: 0.5rem;
+    }
+    .mute {
+        width: 20%;
+        font-size: 0.7rem;
+    }
+    footer p {
+        margin-top: 0px;
+    }
+    .left-foot {
+        margin-top: 20px;
+    }
+    .right-foot {
+        border-top: 1px solid #353051;
+        padding-top: 10px;
     }
 }
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 767px) {
-    .content {
-        flex-direction: column-reverse;
+/* Extra Small devices (max 280px) */
+@media (max-width: 281px) {
+    .weather {
+        font-size: 0.5rem;
     }
 }
-/* Large devices (desktops, 992px and up) */
-/* @media (max-width: 992px) { ... } */

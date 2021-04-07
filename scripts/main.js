@@ -31,11 +31,11 @@ $(document).ready(function () {
                                                   <p>Clima en: Medellín</p>
                                              </div>
                                              <div class="row cont-temp-desc">
-                                                  <div class="col-md-6 col-sm-6 col-xs-6 temp">
+                                                  <div class="col-xs-6 temp">
                                                        <div><p>Temperatura:</p></div>
                                                        <div><p>${data.main.temp}ºC</p></div>
                                                   </div>
-                                                  <div class="col-md-6 col-sm-6 col-xs-6 description">
+                                                  <div class="col-xs-6 description">
                                                        <div><p>description:</p></div>
                                                        <div><p>${data.weather[0].description}</p></div>
                                              </div>
